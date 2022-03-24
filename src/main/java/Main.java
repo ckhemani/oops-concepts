@@ -1,8 +1,14 @@
 import zoo.Animal;
+import zoo.Duck;
 
 public class Main {
     public static void main(String[] args) {
 
+//        Inheritance
+          Animal donald = new Duck(6,"Flapper","Donald");
+        System.out.println(donald.getAge() + " "  +  donald.getGender() + " " + donald.getName() );
+        System.out.println(donald.swim());
+        System.out.println(donald);
 
 //        Animal bear = new Animal();
 //
