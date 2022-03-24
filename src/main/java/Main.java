@@ -1,5 +1,6 @@
 import zoo.Animal;
 import zoo.Duck;
+import zoo.Fish;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +10,15 @@ public class Main {
         System.out.println(donald.getAge() + " "  +  donald.getGender() + " " + donald.getName() );
         System.out.println(donald.swim());
         System.out.println(donald);
+
+        Fish fish1 = new Fish();
+        fish1.setName("SWIMMER1");
+
+        System.out.println(fish1.getName());
+        System.out.println(fish1);
+
+        Fish fish2 = new Fish(10,true);
+        Fish fish3 = new Fish(
 
 //        Animal bear = new Animal();
 //
