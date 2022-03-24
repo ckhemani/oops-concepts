@@ -1,7 +1,17 @@
+//Developer Comments
+/*
+This is where you will put Comments for Programmer.
+*/
+
+//PACKAGE
 package zoo;
 
-//User Defined Blueprint.
-public class Animal {
+//IMPORTS
+
+import interfaces.ICommunication;
+
+//Class Declaration
+public class Animal implements ICommunication {
     // Fields
     private int age;
     private String gender;
@@ -63,6 +73,7 @@ public class Animal {
         return "I am running mam hear a roar!!!";
     }
 
+
 //    public void isSwin(boolean swim){
 //        this.isSwim(true);
 //    }
@@ -75,5 +86,10 @@ public class Animal {
                 ", gender='" + gender + '\'' +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public String speak() {
+        return "I do sounds "   ;
     }
 }
