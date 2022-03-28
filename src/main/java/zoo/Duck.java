@@ -3,6 +3,7 @@ package zoo;
 public class Duck extends Animal {
     //Fields
     private static final String BEAKCOLOR = "Yellow"; //Way to Declare the CONSTANT VARIABLE.
+    //String test = "I can swim with Buddies";
 
     //Constructor
 
@@ -25,7 +26,7 @@ public class Duck extends Animal {
     @Override
     public String swim() {
 //        return super.swim();
-        return "I am swimming in Pond from Duck Class";
+        return " I am swimming in Pond from Duck Class and " + test;
     }
 
     //toString
