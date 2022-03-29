@@ -26,7 +26,7 @@ public class Duck extends Animal {
     @Override
     public String swim() {
 //        return super.swim();
-        return " I am swimming in Pond from Duck Class and " + test;
+        return " I am swimming in Pond from Duck Class and ";
     }
 
     //toString

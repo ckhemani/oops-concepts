@@ -2,7 +2,7 @@ import zoo.Animal;
 import zoo.Duck;
 import zoo.Fish;
 
-public class Main {
+public class AnimalMain {
     public static void main(String[] args) {
 
 //        Inheritance
@@ -18,7 +18,6 @@ public class Main {
         System.out.println(fish1);
 
         Fish fish2 = new Fish(10,true);
-        Fish fish3 = new Fish(
 
 //        Animal bear = new Animal();
 //

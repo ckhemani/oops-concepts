@@ -1,21 +1,29 @@
-public class People {
-    // Define Fields
+package oop;
+
+// User Defined Blueprint
+public class Person {
+    //Fields
+    //Encapsulation
     private String firstName;
     private String lastName;
     private int age;
 
-    // Method with no Parameters
-    public People() {
+    //Default Constructor
+    public Person() {
     }
 
-    // Method with Parameters
-    public People(String firstName, String lastName, int age) {
+    public Person(String firstName) {
+        this.firstName = firstName;
+    }
+
+    //Parameterized Constructor
+    public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
     }
 
-    //Setters and Getters
+    //Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -40,13 +48,15 @@ public class People {
         this.age = age;
     }
 
+    //To String
+//    @Override
+//    public String toString() {
+//        return "My name is " + getFirstName();
+//    }
+
+
     @Override
     public String toString() {
-        return "People{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                '}';
+        return getFirstName();
     }
 }
-
