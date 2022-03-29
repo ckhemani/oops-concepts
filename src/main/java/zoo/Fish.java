@@ -21,10 +21,10 @@ public class Fish extends Animal {
     public Fish() {
     }
 
-//    public Fish(int sizeInFeet, boolean canEat) {
-//        this.sizeInFeet = sizeInFeet;
-//        this.canEat = canEat;
-//    }
+    public Fish(int sizeInFeet, boolean canEat) {
+        this.sizeInFeet = sizeInFeet;
+        this.canEat = canEat;
+    }
 
     public Fish(int age, String gender, String name, int sizeInFeet, boolean canEat) {
         super(age, gender, name);
