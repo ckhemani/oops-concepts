@@ -20,10 +20,30 @@ public class ZooMain {
         System.out.println(greeting());
 
         //Add some Animals
-
+        register();
 
         // Viewing Animals
-
+        while(true) {
+            switch (pickAnimal()) {
+                case 1:
+                    System.out.println("You are viewing the Duck!");
+                    viewDuck();
+                    break;
+                case 2:
+                    System.out.println("You are viewing the Fish!");
+                    viewFish();
+                    break;
+                case 3:
+                    System.out.println("You are viewing the Lion!");
+                    viewLion();
+                    break;
+                case 4:
+                    System.out.println("Thank you " + zoo.getVisitor().getFirstName() + " for visiting the Chandru Zoo!");
+                    System.exit(0);
+                default:
+                    System.out.println("Please pick Either 1-4");
+            }
+        }
     }
 
     // Methods
@@ -57,5 +77,28 @@ public class ZooMain {
         System.out.println("Please enter your Age");
         int age = scanner.nextInt();
         zoo.setVisitor(new Person(firstName,lastName,age));
+    }
+
+    public static int pickAnimal(){
+        System.out.println("""
+                sout("Please enter your selection?"
+                1. Duck
+                2. Fish
+                3. Lion
+                4. Exit
+                """);
+        return scanner.nextInt();
+    }
+
+    public static void viewDuck(){
+        System.out.println(duck);
+    }
+
+    public static void viewFish(){
+        System.out.println(fish);
+    }
+
+    public static void viewLion(){
+        System.out.println(lion);
     }
 }

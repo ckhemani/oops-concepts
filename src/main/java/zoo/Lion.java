@@ -18,9 +18,7 @@ public class Lion extends Animal{
 
     @Override
     public String toString() {
-        return "Lion{" +
-                "isWild=" + isWild +
-                '}';
+        return "Lion " + getName() + "Name : " + getName();
     }
 }
 
