@@ -65,7 +65,7 @@ public class ZooMain {
         // Setting animals array List to the zoo object array list.
         zoo.setAnimals(animals);
 
-    //    zoo.setAnimals(new ArrayList<Animal>(Arrays.asList(lion,duck,fish)));
+        //    zoo.setAnimals(new ArrayList<Animal>(Arrays.asList(lion,duck,fish)));
     }
 
     public static void register(){
